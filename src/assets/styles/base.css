@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+@import "tailwindcss";
+
+body {
+  font-family: 'Arial', sans-serif;
+  @apply bg-(--color-bg) text-(--color-text-primary);
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Acme', sans-serif;
+}
+
+p {
+    font-family: 'Arial', sans-serif;
+}
