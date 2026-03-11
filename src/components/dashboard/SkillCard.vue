@@ -1,8 +1,8 @@
 <template>
-    <BaseCard class="w-147 h-80 flex flex-col overflow-hidden" :useDarkShadow="true">
+    <BaseCard class="w-full max-w-147 min-w-0 sm:min-w-95 h-80 flex flex-col overflow-hidden" :useDarkShadow="true">
 
         <!-- HEADER (Fixe Höhe) -->
-        <div class="w-full h-16 px-8 flex items-center justify-between text-sm font-semibold tracking-wide">
+        <div class="w-full h-16 px-4 sm:px-8 flex items-center justify-between text-sm font-semibold tracking-wide">
             <span class="text-text-primary">
                 SKILLS
             </span>
@@ -13,28 +13,28 @@
         </div>
 
         <!-- SKILLS CONTAINER (nimmt Resthöhe) -->
-        <div class="flex-1 px-8 pb-6 overflow-y-auto">
+        <div class="flex-1 w-full px-4 sm:px-8 pb-6 overflow-y-auto">
 
-            <div class="space-y-1">
+            <div class="space-y-1 w-full">
 
-                <div v-for="skill in skills" :key="skill.name" class="flex items-center h-5">
+                <div v-for="skill in skills" :key="skill.name" class="w-full flex items-center h-5 gap-2 sm:gap-2.5">
 
                     <!-- Color Box -->
                     <div class="w-5 h-5 rounded-sm shrink-0" :style="getColorStyle(skill.color, 0.4)"></div>
 
                     <!-- Skill Name -->
-                    <div class="ml-2.5 w-35 text-xs text-text-primary truncate">
+                    <div class="w-22 sm:w-35 min-w-0 text-xs text-text-primary truncate">
                         {{ skill.name }}
                     </div>
 
                     <!-- Bar -->
-                    <div class="ml-4 w-75 h-2 rounded-sm overflow-hidden border"
+                    <div class="flex-1 min-w-0 sm:min-w-24 h-2 rounded-sm overflow-hidden border"
                         :style="{ ...barBackgroundStyle, ...borderColor }">
                         <div class="h-full transition-all duration-700" :style="getBarStyle(skill)"></div>
                     </div>
 
                     <!-- Years -->
-                    <div class="ml-2.5 text-xs text-text-muted whitespace-nowrap">
+                    <div class="text-[10px] sm:text-xs text-text-muted whitespace-nowrap">
                         {{ skill.years }} YEARS
                     </div>
 

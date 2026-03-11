@@ -1,5 +1,5 @@
 <template>
-    <div class="profile-page flex flex-col gap-6 p-6">
+    <div class="profile-page flex flex-col gap-6 pb-6">
 
         <!-- Tabs (nur unter 1250px sichtbar) -->
         <div class="flex gap-2 xl:hidden">
@@ -22,7 +22,7 @@
                 <EducationCard />
 
                 <!-- Interests & Characteristics nebeneinander -->
-                <div class="flex gap-4 w-full">
+                <div class="flex flex-col sm:flex-row gap-4 w-full">
                     <div class="flex-1">
                         <InterestsCard />
                     </div>

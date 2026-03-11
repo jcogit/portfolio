@@ -43,8 +43,8 @@ defineEmits(["close"])
     transition: left 0.25s ease;
 }
 
-/* Desktop ≥1440px */
-@media (min-width: 1440px) {
+/* Desktop >=1024px */
+@media (min-width: 1024px) {
     .sidebar {
         position: sticky;
         top: 0;
@@ -52,8 +52,8 @@ defineEmits(["close"])
     }
 }
 
-/* Mobile <1440px Drawer */
-@media (max-width: 1439px) {
+/* Mobile <1024px Drawer */
+@media (max-width: 1023px) {
     .sidebar {
         position: fixed;
         top: 0;

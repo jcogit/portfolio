@@ -1,16 +1,16 @@
 <template>
-    <BaseCard class="w-147 h-auto flex flex-col overflow-hidden" :useDarkShadow="true">
+    <BaseCard class="w-auto h-auto flex flex-col overflow-hidden" :useDarkShadow="true">
 
         <!-- Header -->
-        <div class="w-full h-16 px-8 flex items-center text-sm font-semibold tracking-wide text-text-primary">
+        <div class="w-full h-16 px-4 sm:px-8 flex items-center justify-between text-sm font-semibold tracking-wide">
             LATEST PROJECT TIMELINE
         </div>
 
         <!-- Content -->
-        <div class="flex-1 flex px-8 pb-6">
+        <div class="flex-1 flex pr-2 sm:px-8 pb-2 sm:pb-6">
 
             <!-- Gradient Timeline Bar -->
-            <div class="relative w-1.25 ml-5 mr-5 shrink-0">
+            <div class="relative w-1.25 sm:ml-5 ml-2 sm:mr-5 mr-2 shrink-0">
                 <div class="absolute inset-0 rounded-full" style="background: linear-gradient(to bottom,
                     rgba(var(--color-accent-warm-rgb),1),
                     rgba(var(--color-accent-warm-rgb),0));">

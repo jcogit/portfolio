@@ -5,13 +5,15 @@
         </h3>
 
         <div class="flex flex-col gap-4 w-full">
-            <div v-for="item in edu" :key="`${item.from}-${item.to}-${item.designation}`"
-                class="flex gap-2 items-start w-full">
-                <TextField label="From" :value="item.from.toString()" variant="dark"
-                    :inputStyle="{ width: '50px', textAlign: 'center' }" />
-                <TextField label="To" :value="item.to.toString()" variant="dark"
-                    :inputStyle="{ width: '50px', textAlign: 'center' }" />
-                <TextField label="Designation" :value="item.designation" variant="dark" class="flex-1"
+            <div v-for="item in edu" :key="`${item.from}-${item.to}-${item.designation}`" class="education-row w-full">
+                <div class="date-row">
+                    <TextField label="From" :value="item.from.toString()" variant="dark" class="date-field"
+                        :inputStyle="{ width: '50px', textAlign: 'center' }" />
+                    <TextField label="To" :value="item.to.toString()" variant="dark" class="date-field"
+                        :inputStyle="{ width: '50px', textAlign: 'center' }" />
+                </div>
+
+                <TextField label="Designation" :value="item.designation" variant="dark" class="designation-field"
                     :inputStyle="{ width: '100%' }" />
             </div>
         </div>
@@ -33,5 +35,36 @@ const edu = education
 
 .text-field .readonly-input {
     box-sizing: border-box;
+}
+
+.education-row {
+    display: flex;
+    gap: 0.5rem;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.date-row {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.designation-field {
+    flex: 1;
+}
+
+@media (max-width: 767px) {
+    .education-row {
+        flex-direction: column;
+        gap: 0.375rem;
+    }
+
+    .date-row {
+        width: 100%;
+    }
+
+    .designation-field {
+        width: 100%;
+    }
 }
 </style>

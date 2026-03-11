@@ -5,7 +5,7 @@
         <div class="flex items-center gap-3">
 
             <!-- Mobile Menu: sichtbar <1440px -->
-            <button class="icon-btn 2xl:hidden" @click="$emit('toggleSidebar')">
+            <button v-if="showMenuButton" class="icon-btn" @click="$emit('toggleSidebar')">
                 <BaseIcon name="menu" />
             </button>
 
@@ -44,6 +44,10 @@
 import { computed, ref } from "vue"
 import { useRoute } from "vue-router"
 import BaseIcon from "../ui/BaseIcon.vue"
+
+defineProps<{
+    showMenuButton: boolean
+}>()
 
 defineEmits(["toggleSidebar"])
 
