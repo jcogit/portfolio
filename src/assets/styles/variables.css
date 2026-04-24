@@ -23,6 +23,14 @@
   --color-accent-warm-rgb: 200, 51, 94;
   --color-accent-cool: #3F7DCB;
   --color-accent-cool-rgb: 63, 125, 203;
+  --color-accent-frontend: #3F7DCB;
+  --color-accent-frontend-rgb: 63, 125, 203;
+  --color-accent-backend: #C8335E;
+  --color-accent-backend-rgb: 200, 51, 94;
+  --color-accent-design: #1C695A;
+  --color-accent-design-rgb: 28, 105, 90;
+  --color-accent-hospitality: #C9823A;
+  --color-accent-hospitality-rgb: 201, 130, 58;
 
   --gradient-credit: linear-gradient(135deg, #301D30, #23263B);
 

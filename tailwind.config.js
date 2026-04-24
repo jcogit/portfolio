@@ -28,6 +28,9 @@ export default {
                 textMuted: "var(--color-text-muted)",
                 accentWarm: "var(--color-accent-warm)",
                 accentCool: "var(--color-accent-cool)",
+                accentBackend: "var(--color-accent-backend)",
+                accentFrontend: "var(--color-accent-frontend)",
+                accentDesign: "var(--color-accent-design)",
             },
             fontFamily: {
                 acme: ['Acme', 'sans-serif'],
