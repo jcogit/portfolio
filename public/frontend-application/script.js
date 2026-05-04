@@ -87,16 +87,16 @@ const translations = {
         "nav.ux": "UX/UI",
         "nav.projects": "Projekter",
         "nav.diplomas": "Diplomer",
-        "nav.teamwork": "Vaerdi",
+        "nav.teamwork": "Værdi",
         "nav.closing": "Afslutning",
         "top.loggedIn": "Logget ind",
 
-        "hero.kicker": "Ansogning Frontend udvikler",
-        "hero.title": "Passioneret frontend udvikler med staerkt UX/UI-fokus soger stillingen hos Esmark",
+        "hero.kicker": "Ansøgning Frontend udvikler",
+        "hero.title": "Passioneret frontend udvikler med stærkt UX/UI-fokus søger stillingen hos Esmark",
         "hero.lead": "",
-        "hero.ctaStart": "Laes ansogning",
+        "hero.ctaStart": "Læs ansøgning",
         "hero.ctaContactMe": "Kontakt mig",
-        "hero.ctaPortfolio": "Abn portfolio",
+        "hero.ctaPortfolio": "Åbn portfolio",
         "hero.profileRole": "Frontend udvikler · UX/UI fokus",
         "hero.chipA": "Vue / Nuxt",
         "hero.chipB": "Performance",
@@ -105,14 +105,14 @@ const translations = {
         "meta.categoryLabel": "Kategori",
         "meta.categoryValue": "Frontend udvikler",
         "meta.locationLabel": "Arbejdssted",
-        "meta.locationValue": "Aarhus, Hvide Sande, Blavand",
+        "meta.locationValue": "Aarhus, Hvide Sande, Blåvand",
         "meta.typeLabel": "Jobtype",
         "meta.typeValue": "Fuldtid",
-        "meta.deadlineLabel": "Ansogningsfrist",
+        "meta.deadlineLabel": "Ansøgningsfrist",
         "meta.deadlineValue": "24/05/2026",
 
         "motivation.tag": "Motivation",
-        "motivation.title": "Kære Esmark-teamet",
+        "motivation.title": "Kære Esmark-team",
         "motivation.p1": "Jeg blev oprigtigt nysgerrig, da jeg så jeres stillingsopslag. Kombinationen af frontend udvikling, UX/UI og fokus på den samlede brugeroplevelse rammer præcis det, jeg brænder for i mit arbejde.",
         "motivation.p2": "Samtidig kender jeg feriehusbranchen indefra, og jeg ved, hvor meget det betyder, at både gæster og husejere møder en digital løsning, der er enkel, overskuelig og fungerer – hver gang. Det er netop den type løsninger, jeg motiveres af at arbejde med.",
 
@@ -122,9 +122,9 @@ const translations = {
         "tech.p2": "I min seneste stilling arbejdede jeg blandt andet med at redesigne og videreudvikle eksisterende løsninger, hvor jeg havde ansvar for både struktur, design og implementering. Jeg trives særligt i spændingsfeltet mellem teknik og design, hvor jeg kan omsætte idéer til konkrete, velfungerende løsninger.",
         "tech.p3": "Jeg arbejder dagligt med HTML, CSS, JavaScript og frameworks som Vue/Nuxt og Tailwind. Derudover bruger jeg aktivt AI som et værktøj i udviklingsprocessen til at arbejde mere effektivt og afprøve løsninger hurtigt.",
 
-        "ux.tag": "UX/UI-forstaelse & kvalitet",
-        "ux.title": "Klar brugerforing og gennemtankt interaktion",
-        "ux.p1": "Et godt interface er for mig mere end visuelt design. Jeg fokuserer pa klar navigation, konsistente strukturer og interaktioner, der leder brugeren naturligt frem mod malet.",
+        "ux.tag": "UX/UI-forståelse & kvalitet",
+        "ux.title": "Klar brugerføring og gennemtænkt interaktion",
+        "ux.p1": "Et godt interface er for mig mere end visuelt design. Jeg fokuserer på klar navigation, konsistente strukturer og interaktioner, der leder brugeren naturligt frem mod målet.",
         "ux.p2": "Jeg har fokus på struktur, flow og detaljer, og jeg lægger vægt på, at løsninger er intuitive og gennemarbejdede. Især elementer som formularer, performance og responsivt design er områder, hvor jeg naturligt er meget opmærksom.",
 
         "projects.tag": "Egeninitiativ & projekter",
@@ -145,13 +145,13 @@ const translations = {
         "diplomas.webdevDesc": "Officielt diplomdokument for webudviklingsuddannelsen.",
         "diplomas.multimediaTitle": "Multimediedesign og Kommunikation",
         "diplomas.multimediaDesc": "Officielt diplomdokument for multimediedesign og digital kommunikation.",
-        "diplomas.open": "Aben PDF",
+        "diplomas.open": "Vis PDF",
         "diplomas.download": "Download",
 
-        "teamwork.tag": "Samarbejde & vaerdi",
-        "teamwork.title": "Teamorienteret og selvstaendig",
-        "teamwork.p1": "Jeg arbejder struktureret og ansvarligt og trives i taet samarbejde med design, marketing og produkt for at skabe losninger, der er bade brugervenlige og kommercielt relevante.",
-        "teamwork.p2": "Med min kombination af teknisk styrke, designforstaelse og brancheindsigt er jeg overbevist om, at jeg kan bidrage markant til den videre udvikling af Esmarks digitale platform.",
+        "teamwork.tag": "Samarbejde & værdi",
+        "teamwork.title": "Teamorienteret og selvstændig",
+        "teamwork.p1": "Jeg arbejder struktureret og ansvarligt og trives i tæt samarbejde med design, marketing og produkt for at skabe løsninger, der er både brugervenlige og kommercielt relevante.",
+        "teamwork.p2": "Med min kombination af teknisk styrke, designforståelse og brancheindsigt er jeg overbevist om, at jeg kan bidrage markant til den videre udvikling af Esmarks digitale platform.",
 
         "closing.title": "Jeg ser frem til en personlig samtale",
         "closing.copy": "Jeg vil meget gerne uddybe min motivation og mine ideer til rollen som Frontend udvikler i en samtale.",
@@ -159,7 +159,7 @@ const translations = {
         "closing.ctaContactMe": "Kontakt mig",
         "closing.ctaPortfolio": "Se portfolio",
 
-        "footer.copy": "Ansognings-landingpage af Janina-Cindy Ortelt til Frontend-stillingen hos Esmark.",
+        "footer.copy": "Ansøgnings-landingpage af Janina-Cindy Ortelt til Frontend-stillingen hos Esmark.",
         "footer.portfolio": "Til portfolio"
     }
 };
