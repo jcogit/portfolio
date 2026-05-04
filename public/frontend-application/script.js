@@ -31,7 +31,7 @@ const translations = {
         "meta.deadlineValue": "24/05/2026",
 
         "motivation.tag": "Motivation & Esmark fit",
-        "motivation.title": "Dear Mr. Schell, dear Esmark team",
+        "motivation.title": "Dear Esmark team",
         "motivation.p1": "The advertised frontend role with strong UX/UI focus immediately caught my attention. The combination of technical implementation, design awareness, and user-experience optimization matches exactly how I work.",
         "motivation.p2": "Through my previous experience in the holiday-rental domain, I developed a practical understanding of guest and owner expectations and the importance of a seamless customer journey.",
 
@@ -112,7 +112,7 @@ const translations = {
         "meta.deadlineValue": "24/05/2026",
 
         "motivation.tag": "Motivation",
-        "motivation.title": "Kære Oliver Schell og Esmark-teamet",
+        "motivation.title": "Kære Esmark-teamet",
         "motivation.p1": "Jeg blev oprigtigt nysgerrig, da jeg så jeres stillingsopslag. Kombinationen af frontend udvikling, UX/UI og fokus på den samlede brugeroplevelse rammer præcis det, jeg brænder for i mit arbejde.",
         "motivation.p2": "Samtidig kender jeg feriehusbranchen indefra, og jeg ved, hvor meget det betyder, at både gæster og husejere møder en digital løsning, der er enkel, overskuelig og fungerer – hver gang. Det er netop den type løsninger, jeg motiveres af at arbejde med.",
 
