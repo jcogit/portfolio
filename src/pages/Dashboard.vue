@@ -13,7 +13,7 @@
         <InfoCard class="info-card info-4" label="Learning" variant="info-right" icon="learning"
             :useDarkShadow="true" />
 
-        <CreditCard class="credit-card" profileSrc="src/assets/profile.png" topLine="Software / Web Developer"
+        <CreditCard class="credit-card" :profileSrc="profileImage" topLine="Software / Web Developer"
             secondLine="Multimedia Designer" middleText="JANINA-CINDY-ORTELT" bottomFirstLeft="Status"
             bottomFirstRight="Active" bottomSecondLeft="Location" bottomSecondRight="DK" :useDarkShadow="true" />
 
@@ -35,6 +35,7 @@ import CreditCard from "../components/dashboard/CreditCard.vue"
 import KnowledgeCard from "../components/dashboard/KnowledgeCard.vue"
 import SkillCard from "../components/dashboard/SkillCard.vue"
 import TimeLineCard from "../components/dashboard/TimeLineCard.vue"
+import profileImage from "../assets/profile.png"
 
 import { knowledgeData } from "../data/knowledge"
 import type { KnowledgeKey } from "../data/knowledge"

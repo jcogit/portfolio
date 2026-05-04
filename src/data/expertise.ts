@@ -1,10 +1,12 @@
+import profileImage from '../assets/profile.svg'
+
 export const expertiseData = [
     // Card 1 – General Info
     {
         title: 'Janina Ortelt',
         subTitle: 'Full-Stack Developer · Systems Developer · Multimedia Designer',
         lineColor: 'rgba(var(--color-accent-cool-rgb),0.5)',
-        imageSrc: 'src/assets/profile.svg',
+        imageSrc: profileImage,
         optionalTitle: 'Digital Solutions — Designed and Engineered as a Whole',
         highlightText: 'I don’t see software as separate layers - they are one coherent system.',
         highlightColor: 'rgba(var(--color-accent-warm-rgb),0.5)',
