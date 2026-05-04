@@ -5,6 +5,7 @@ const translations = {
         "nav.tech": "Tech",
         "nav.ux": "UX/UI",
         "nav.projects": "Projects",
+        "nav.diplomas": "Diplomas",
         "nav.teamwork": "Value",
         "nav.closing": "Closing",
         "top.loggedIn": "Logged in",
@@ -55,6 +56,16 @@ const translations = {
         "projects.cTitle": "GitHub references",
         "projects.cLink": "Open GitHub profile",
 
+        "diplomas.tag": "Certificates",
+        "diplomas.title": "Diplomas and formal qualifications",
+        "diplomas.copy": "Selected diploma documents are available below as PDFs for quick review.",
+        "diplomas.webdevTitle": "Professional Bachelor in Web Development",
+        "diplomas.webdevDesc": "Official diploma document covering advanced web development education.",
+        "diplomas.multimediaTitle": "Multimedia Design and Communication",
+        "diplomas.multimediaDesc": "Official diploma document for multimedia design and digital communication.",
+        "diplomas.open": "Open PDF",
+        "diplomas.download": "Download",
+
         "teamwork.tag": "Collaboration & value",
         "teamwork.title": "Team-oriented and self-driven",
         "teamwork.p1": "I work in a structured and responsible way and collaborate closely with design, marketing, and product to build outcomes that are both user-centered and commercially meaningful.",
@@ -75,6 +86,7 @@ const translations = {
         "nav.tech": "Tech",
         "nav.ux": "UX/UI",
         "nav.projects": "Projekter",
+        "nav.diplomas": "Diplomer",
         "nav.teamwork": "Vaerdi",
         "nav.closing": "Afslutning",
         "top.loggedIn": "Logget ind",
@@ -126,6 +138,16 @@ const translations = {
         "projects.cTitle": "GitHub referencer",
         "projects.cLink": "Se GitHub profil",
 
+        "diplomas.tag": "Uddannelse",
+        "diplomas.title": "Diplomer og formelle kvalifikationer",
+        "diplomas.copy": "Her kan relevante diplomdokumenter ses som PDF-filer.",
+        "diplomas.webdevTitle": "Professionsbachelor i Web Development",
+        "diplomas.webdevDesc": "Officielt diplomdokument for webudviklingsuddannelsen.",
+        "diplomas.multimediaTitle": "Multimediedesign og Kommunikation",
+        "diplomas.multimediaDesc": "Officielt diplomdokument for multimediedesign og digital kommunikation.",
+        "diplomas.open": "Aben PDF",
+        "diplomas.download": "Download",
+
         "teamwork.tag": "Samarbejde & vaerdi",
         "teamwork.title": "Teamorienteret og selvstaendig",
         "teamwork.p1": "Jeg arbejder struktureret og ansvarligt og trives i taet samarbejde med design, marketing og produkt for at skabe losninger, der er bade brugervenlige og kommercielt relevante.",
@@ -146,7 +168,7 @@ const translatableNodes = Array.from(document.querySelectorAll("[data-i18n]"));
 const translatableTitleNodes = Array.from(document.querySelectorAll("[data-i18n-title]"));
 const langButtons = Array.from(document.querySelectorAll(".lang-btn"));
 const navLinks = Array.from(document.querySelectorAll(".section-nav a"));
-const sectionIds = ["intro", "motivation", "tech", "ux", "projects", "teamwork", "closing"];
+const sectionIds = ["intro", "motivation", "tech", "ux", "projects", "teamwork", "diplomas", "closing"];
 
 function applyLanguage(lang) {
     const selected = translations[lang] ? lang : "da";

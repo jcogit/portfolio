@@ -385,6 +385,84 @@ iconify-icon {
   font-weight: 700;
 }
 
+.diploma-grid {
+  margin-top: 0.9rem;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.72rem;
+}
+
+.diploma-card {
+  border-radius: 14px;
+  border: 1px solid rgba(4, 136, 205, 0.2);
+  background: linear-gradient(160deg, rgba(255, 255, 255, 0.95), rgba(254, 245, 237, 0.95));
+  padding: 0.95rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.diploma-preview {
+  margin: 0 0 0.65rem;
+  border-radius: 11px;
+  overflow: hidden;
+  border: 1px solid rgba(4, 136, 205, 0.24);
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.9), rgba(231, 245, 255, 0.9));
+  box-shadow: 0 10px 24px rgba(22, 69, 103, 0.14);
+  aspect-ratio: 16 / 10;
+}
+
+.diploma-preview img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1.01);
+  transition: transform 0.42s ease;
+}
+
+.diploma-card:hover .diploma-preview img {
+  transform: scale(1.06);
+}
+
+.diploma-card h3 {
+  color: #164567;
+  font-size: 0.98rem;
+  margin-bottom: 0.45rem;
+}
+
+.diploma-card p {
+  color: rgba(52, 98, 129, 0.9);
+  font-size: 0.88rem;
+}
+
+.diploma-actions {
+  margin-top: auto;
+  padding-top: 0.75rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+
+.diploma-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9px;
+  border: 1px solid rgba(4, 136, 205, 0.42);
+  background: linear-gradient(120deg, var(--blue-main), var(--blue-soft));
+  color: var(--white);
+  text-decoration: none;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 0.5rem 0.72rem;
+}
+
+.diploma-link.ghost {
+  background: rgba(255, 255, 255, 0.8);
+  color: var(--blue-deep);
+}
+
 .coast-grid {
   margin-top: 0.85rem;
   display: grid;
@@ -495,6 +573,7 @@ iconify-icon {
   }
 
   .proof-list,
+  .diploma-grid,
   .coast-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -515,6 +594,7 @@ iconify-icon {
   }
 
   .proof-list,
+  .diploma-grid,
   .coast-grid {
     grid-template-columns: 1fr;
   }
