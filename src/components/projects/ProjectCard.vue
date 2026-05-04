@@ -79,7 +79,8 @@ const statusLabelMap: Record<ProjectItem['status'], string> = {
 const statusLabel = computed(() => statusLabelMap[props.project.status])
 
 function isInternalLink(href: string): boolean {
-    return href.startsWith('/') && !href.startsWith('/house-rental-prototype')
+    const internalExact = new Set(['/', '/profile', '/experience', '/projects'])
+    return internalExact.has(href) || href.startsWith('/projects/')
 }
 </script>
 

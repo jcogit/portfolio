@@ -4,7 +4,7 @@ import Dashboard from '../pages/Dashboard.vue'
 import Profile from '../pages/Profile.vue'
 import Experience from '../pages/Experience.vue'
 import Projects from '../pages/Projects.vue'
-import VacationRentalPrototype from '../pages/VacationRental.vue'
+import VacationRental from '../pages/VacationRental.vue'
 import PortfolioDashboard from '../pages/PortfolioDashboard.vue'
 import WowHousing from '../pages/WowHousing.vue'
 import MangaCollection from '../pages/MangaCollection.vue'
@@ -41,7 +41,7 @@ const routes: RouteRecordRaw[] = [
     {
         path: '/projects/vacation-rental',
         name: 'Vacation Rental Prototype',
-        component: VacationRentalPrototype,
+        component: VacationRental,
     },
     {
         path: '/projects/portfolio-dashboard',
