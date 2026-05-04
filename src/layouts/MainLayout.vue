@@ -14,7 +14,7 @@
             <TopBar :showMenuButton="showMenuButton" @toggleSidebar="toggleSidebar" class="sticky top-0 z-20" />
 
             <!-- Scrollbarer Content -->
-            <main class="flex-1 flex justify-center p-2 overflow-y-auto">
+            <main ref="contentScrollEl" class="flex-1 flex justify-center p-2 overflow-y-auto">
                 <div class="w-full max-w-300 2xl:max-w-375">
                     <slot />
                 </div>
@@ -26,12 +26,15 @@
 </template>
 
 <script setup lang="ts">
-import { computed, onBeforeUnmount, onMounted, ref } from "vue"
+import { computed, nextTick, onBeforeUnmount, onMounted, ref, watch } from "vue"
+import { useRoute } from "vue-router"
 import SideBar from "../components/navigation/SideBar.vue"
 import TopBar from "../components/navigation/TopBar.vue"
 
 const sidebarOpen = ref(false)
 const isDesktop = ref(false)
+const contentScrollEl = ref<HTMLElement | null>(null)
+const route = useRoute()
 
 let desktopQuery: MediaQueryList | null = null
 
@@ -58,6 +61,29 @@ const showMenuButton = computed(() => !isDesktop.value && !sidebarOpen.value)
 const backgroundImageStyle = {
     backgroundImage: 'url("/src/assets/background.jpeg")',
 } as const
+
+watch(
+    () => route.fullPath,
+    async () => {
+        await nextTick()
+
+        const scrollEl = contentScrollEl.value
+        if (!scrollEl) {
+            return
+        }
+
+        if (route.hash) {
+            const target = scrollEl.querySelector(route.hash) as HTMLElement | null
+            if (target) {
+                target.scrollIntoView({ behavior: 'smooth', block: 'start' })
+                return
+            }
+        }
+
+        scrollEl.scrollTo({ top: 0, left: 0, behavior: 'auto' })
+    },
+    { flush: 'post' }
+)
 </script>
 
 <style scoped>

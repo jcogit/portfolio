@@ -16,8 +16,7 @@
             <BaseItem icon="dashboard" label="Dashboard" to="/" />
             <BaseItem icon="profile" label="Profile" to="/profile" />
             <BaseItem icon="experience" label="Experience" to="/experience" />
-            <BaseItem icon="programming" label="Programming" to="/programming" />
-            <BaseItem icon="design" label="Design" to="/design" />
+            <BaseItem icon="programming" label="Projects" to="/projects" />
         </nav>
     </aside>
 </template>
