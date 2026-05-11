@@ -12,7 +12,7 @@ import MangaCollection from '../pages/MangaCollection.vue'
 const routes: RouteRecordRaw[] = [
     {
         path: '/frontend/',
-        alias: '/frontend',
+        alias: ['/frontend', '/frontend-application', '/frontend-application/'],
         component: Dashboard,
         beforeEnter: (to) => {
             window.location.assign(`/frontend/index.html${to.hash || ''}`)
@@ -21,7 +21,7 @@ const routes: RouteRecordRaw[] = [
     },
     {
         path: '/ferieraadgiver/',
-        alias: '/ferieraadgiver',
+        alias: ['/ferieraadgiver', '/ferieraadgiver-application', '/ferieraadgiver-application/'],
         component: Dashboard,
         beforeEnter: (to) => {
             window.location.assign(`/ferieraadgiver/index.html${to.hash || ''}`)
