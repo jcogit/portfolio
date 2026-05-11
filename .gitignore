@@ -23,3 +23,6 @@ dist-ssr
 *.sln
 *.sw?
 
+# Personal application pages (keep local only, manual Netlify deploy)
+public/frontend/
+public/ferieraadgiver/
