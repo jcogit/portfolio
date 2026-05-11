@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="da">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ferierådgiver Application | Køb­mand Hansen</title>
+    <meta name="description"
+        content="Personal application by Janina-Cindy Ortelt for the Ferierådgiver role at Køb­mand Hansen Feriehusudlejning. IT-professional with genuine passion for holiday rental service excellence." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Sora:wght@400;600;700&display=swap"
+        rel="stylesheet" />
+    <script src="https://code.iconify.design/iconify-icon/1.0.8/iconify-icon.min.js"></script>
+    <link rel="stylesheet" href="./styles.css" />
+</head>
+
+<body>
+    <div class="bg-orb orb-a" aria-hidden="true"></div>
+    <div class="bg-orb orb-b" aria-hidden="true"></div>
+
+    <header class="top-nav">
+        <a class="brand" href="#intro">
+            <span class="brand-dot"></span>
+            Janina-Cindy Ortelt
+        </a>
+
+        <nav class="section-nav" aria-label="Page Navigation">
+            <a href="#intro" data-nav="intro" data-i18n="nav.intro"></a>
+            <a href="#motivation" data-nav="motivation" data-i18n="nav.motivation"></a>
+            <a href="#experience" data-nav="experience" data-i18n="nav.experience"></a>
+            <a href="#strengths" data-nav="strengths" data-i18n="nav.strengths"></a>
+            <a href="#values" data-nav="values" data-i18n="nav.values"></a>
+            <a href="#closing" data-nav="closing" data-i18n="nav.closing"></a>
+        </nav>
+
+        <div class="top-actions">
+            <nav class="lang-switch" aria-label="Language Switcher">
+                <button type="button" class="lang-btn active" data-lang="da">DA</button>
+                <button type="button" class="lang-btn" data-lang="en">EN</button>
+                <button type="button" class="lang-btn" data-lang="de">DE</button>
+            </nav>
+
+            <a class="top-profile" href="#intro" aria-label="Logged in profile">
+                <img src="/ferieraadgiver/profile.png" alt="Janina-Cindy Ortelt" />
+                <span class="top-profile-status" data-i18n-title="top.loggedIn" title="Logged in"></span>
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero reveal" id="intro">
+            <div class="hero-backdrop" aria-hidden="true">
+                <img src="/ferieraadgiver/header.jpg" alt="" loading="lazy" />
+            </div>
+
+            <div class="hero-copy">
+                <p class="kicker" data-i18n="hero.kicker"></p>
+                <h1 data-i18n="hero.title"></h1>
+                <p class="hero-lead" data-i18n="hero.lead"></p>
+            </div>
+        </section>
+
+        <section class="section reveal" id="motivation">
+            <div class="section-head">
+                <p class="section-tag" data-i18n="motivation.tag"></p>
+                <h2>
+                    <iconify-icon icon="ph:heart-fill"></iconify-icon>
+                    <span data-i18n="motivation.title"></span>
+                </h2>
+            </div>
+            <article class="application-letter">
+                <p data-i18n="motivation.p1"></p>
+                <p data-i18n="motivation.p2"></p>
+                <p data-i18n="motivation.p3"></p>
+            </article>
+        </section>
+
+        <section class="section reveal" id="experience">
+            <div class="section-head">
+                <p class="section-tag" data-i18n="experience.tag"></p>
+                <h2>
+                    <iconify-icon icon="ph:briefcase"></iconify-icon>
+                    <span data-i18n="experience.title"></span>
+                </h2>
+            </div>
+            <article class="application-letter">
+                <p data-i18n="experience.p1"></p>
+                <p data-i18n="experience.p2"></p>
+                <p data-i18n="experience.p3"></p>
+            </article>
+        </section>
+
+        <section class="section reveal" id="strengths">
+            <div class="section-head">
+                <p class="section-tag" data-i18n="strengths.tag"></p>
+                <h2>
+                    <iconify-icon icon="ph:star-fill"></iconify-icon>
+                    <span data-i18n="strengths.title"></span>
+                </h2>
+            </div>
+
+            <div class="strength-grid">
+                <article class="strength-card">
+                    <iconify-icon icon="ph:smiley-wink"></iconify-icon>
+                    <h3 data-i18n="strengths.card1Title"></h3>
+                    <p data-i18n="strengths.card1Desc"></p>
+                </article>
+                <article class="strength-card">
+                    <iconify-icon icon="ph:list-checks"></iconify-icon>
+                    <h3 data-i18n="strengths.card2Title"></h3>
+                    <p data-i18n="strengths.card2Desc"></p>
+                </article>
+                <article class="strength-card">
+                    <iconify-icon icon="ph:translate"></iconify-icon>
+                    <h3 data-i18n="strengths.card3Title"></h3>
+                    <p data-i18n="strengths.card3Desc"></p>
+                </article>
+                <article class="strength-card">
+                    <iconify-icon icon="ph:target"></iconify-icon>
+                    <h3 data-i18n="strengths.card4Title"></h3>
+                    <p data-i18n="strengths.card4Desc"></p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section reveal" id="values">
+            <div class="section-head">
+                <p class="section-tag" data-i18n="values.tag"></p>
+                <h2>
+                    <iconify-icon icon="ph:compass"></iconify-icon>
+                    <span data-i18n="values.title"></span>
+                </h2>
+            </div>
+            <article class="application-letter">
+                <p data-i18n="values.p1"></p>
+                <p data-i18n="values.p2"></p>
+            </article>
+        </section>
+
+        <section class="section reveal closing" id="closing">
+            <h2>
+                <iconify-icon icon="ph:paper-plane-tilt"></iconify-icon>
+                <span data-i18n="closing.title"></span>
+            </h2>
+            <p data-i18n="closing.copy"></p>
+            <p class="letter-signature" data-i18n="closing.signature"></p>
+            <div class="cta-row">
+                <a class="cta primary"
+                    href="mailto:dsh@kobmand-hansen.dk?subject=Ansøgning%20Ferierådgiver%20-%20Janina-Cindy%20Ortelt"
+                    data-i18n="closing.ctaContactMe"></a>
+                <a class="cta ghost" href="/" target="_blank" rel="noopener noreferrer"
+                    data-i18n="closing.ctaPortfolio"></a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p data-i18n="footer.copy"></p>
+        <a href="/" target="_blank" rel="noopener noreferrer" data-i18n="footer.portfolio"></a>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
