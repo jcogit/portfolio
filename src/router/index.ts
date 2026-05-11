@@ -11,10 +11,20 @@ import MangaCollection from '../pages/MangaCollection.vue'
 
 const routes: RouteRecordRaw[] = [
     {
-        path: '/house-rental-prototype/',
+        path: '/frontend/',
+        alias: '/frontend',
         component: Dashboard,
-        beforeEnter: () => {
-            window.location.assign('/house-rental-prototype/index.html')
+        beforeEnter: (to) => {
+            window.location.assign(`/frontend/index.html${to.hash || ''}`)
+            return false
+        },
+    },
+    {
+        path: '/ferieraadgiver/',
+        alias: '/ferieraadgiver',
+        component: Dashboard,
+        beforeEnter: (to) => {
+            window.location.assign(`/ferieraadgiver/index.html${to.hash || ''}`)
             return false
         },
     },
