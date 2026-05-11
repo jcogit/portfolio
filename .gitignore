@@ -22,3 +22,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Personal application pages (keep local only)
+public/frontend-application/
+public/ferieraadgiver-application/
